@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
 
-$primary-color: #131086;
-$secondary-color: #b621f3;
 
 * {
     box-sizing: border-box;
@@ -9,17 +7,21 @@ $secondary-color: #b621f3;
 
 body {
     padding: 0;
-    margin:0;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: "Inter", sans-serif;
-    background:linear-gradient(45deg,$primary-color,$secondary-color);
-    padding: 40px;
+    // background:linear-gradient(45deg,$primary-color,$secondary-color);
+    background-image: url('../bg.jpg');
+    background-size: cover;
+    padding: 45px;
 }
 
 .container {
-    min-height: calc(100vh - 40px * 2);
+    min-height: calc(100vh - 50px * 2);
     display: grid;
     grid-template-columns: 50% 50%;
-    border-radius: 10px;
+    border-radius: 15px;
+    min-width: auto;
     overflow: hidden;
 }
 
@@ -37,8 +39,9 @@ body {
     justify-content: center;
 
     img {
-        width: 80%;
-        padding-top: 70px;
+        width: 70%;
+        height: 90%;
+        padding-top: 80px;
     }
 }
 
@@ -66,7 +69,7 @@ body {
     &-footer {
         display: flex;
         gap:30px;
-        margin-top: 70px;
+        margin-top: 50px;
 
         a {
             flex: 6;
@@ -121,12 +124,12 @@ input[type='password'] {
 input[type='checkbox'] {
     width: 20px;
     height: 20px;
-    accent-color: $primary-color;
+    accent-color: blueviolet;
 }
 
 button {
     border:none;
-    background: linear-gradient(45deg, $primary-color, $secondary-color);
+    background-color: blueviolet;
     color: white;
     padding: 1rem;
     border-radius: 100px;
@@ -135,6 +138,10 @@ button {
     font-size: 18px;
     height: 55px;
     cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
 }
 
 /* Responsive */
