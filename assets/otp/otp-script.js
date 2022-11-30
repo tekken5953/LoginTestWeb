@@ -1,6 +1,9 @@
 
     const inputs = document.querySelectorAll('.otp-card-inputs input')
     const button = document.querySelector('.otp-card button')
+    var email_value = localStorage.getItem('send_email')
+    let x = document.getElementsByClassName('receive_email')[0];
+    x.innerText = email_value;
 
     inputs.forEach(input => {
         let lastInputStatus = 0

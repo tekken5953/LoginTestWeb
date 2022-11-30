@@ -11,7 +11,7 @@ body {
     margin-right: 50px;
     font-family: 'Poppins', sans-serif;
     // background:linear-gradient(45deg,$primary-color,$secondary-color);
-    background-image: url('../bg.jpg');
+    background-image: url('./bg_image.jpg');
     background-size: cover;
     padding: 45px;
 }
@@ -103,6 +103,7 @@ body {
 }
 
 input[type='text'],
+input[type='email'],
 input[type='password'] {
     border:1px solid black;
     height: 55px;

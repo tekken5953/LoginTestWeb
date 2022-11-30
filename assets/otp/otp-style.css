@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('bg.jpg');
+    background-image: url('./bg_image.jpg');
     background-size: cover;
     height: 100vh;
 }
